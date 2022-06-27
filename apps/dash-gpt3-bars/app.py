@@ -21,7 +21,7 @@ def Header(name, app):
 
 
 # Authentication
-openai.api_key = os.getenv("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")
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 # Define the prompt
