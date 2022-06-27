@@ -4,8 +4,8 @@ from textwrap import dedent
 
 import dash
 import dash_bootstrap_components as dbc
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc
+from dash import html
 from dash.dash import no_update
 from dash.dependencies import Input, Output, State
 import plotly.express as px
@@ -21,7 +21,7 @@ def Header(name, app):
 
 
 # Authentication
-openai.api_key = os.getenv("OPENAI_KEY")
+openai.api_key = os.getenv("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")
 
 
 # Define the prompt
